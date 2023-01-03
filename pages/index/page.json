@@ -14,5 +14,29 @@
 			"headers": "JSON\nVIEW",
 			"response": "JSON\nVIEW"
 		}]
+	}, {
+		"name": "Module Name",
+		"description": "Module Description",
+		"headers": "JSON\nVIEW",
+		"apis": [{
+			"name": "API Name",
+			"description": "API Description",
+			"method": "POST",
+			"payload": "JSON\nVIEW",
+			"headers": "JSON\nVIEW",
+			"response": "JSON\nVIEW"
+		}]
+	}, {
+		"name": "Module Name",
+		"description": "Module Description",
+		"headers": "JSON\nVIEW",
+		"apis": [{
+			"name": "API Name",
+			"description": "API Description",
+			"method": "POST",
+			"payload": "JSON\nVIEW",
+			"headers": "JSON\nVIEW",
+			"response": "JSON\nVIEW"
+		}] 
 	}]
 }

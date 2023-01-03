@@ -1,22 +1,89 @@
-<!-- main column -->
-<h1>{{{title}}}</h1>
-<p>{{{description}}}</p>
-<pre>{{{headers}}}</pre>
-{% for module in modules %}
-	<!-- main column -->
-	<h2>{{{module.name}}}</h2>
-	<p>{{{module.description}}}</p>
-	<pre>{{{module.headers}}}</pre>
-	{% for api in module.apis %}
-		<div>
-			<!-- main column -->
-			<h3>{{{api.name}}}</h3>
-			<p>{{{api.description}}}</p>
-			<pre>{{{api.response}}}</pre>
-			<!-- side column -->
-			<h3>{{{api.method}}}</h3>
-			<pre>{{{api.headers}}}</pre>
-			<pre>{{{api.payload}}}</pre>
+<!-- main column  -->
+<div class="container">
+
+	<div class="content">
+		<div class="content__about">
+			<h1 class="content__about-title">{{{title}}}</h1>
+			<p class="content__about-description">{{{description}}}</p>
+			<pre>{{{headers}}}</pre>
 		</div>
-	{% endfor %}
-{% endfor %}
+		<div class="content__main">
+			{% for module in modules %}
+			<!-- main column  -->
+			<div class="content__main-module">
+				<div class="content__module-info">
+					<h2 class="content__module-title">{{{module.name}}}</h2>
+					<p class="content__module-description">{{{module.description}}}</p>
+					<pre class="content__module-text">{{{module.headers}}}</pre>
+				</div>
+				{% for api in module.apis %}
+				<!-- main column  -->
+				<!-- side column  -->
+				<div class="content__main-api">
+					<h3 class="content__api-title">{{{api.method}}}</h3>
+					<pre class="content__api-text">{{{api.headers}}}</pre>
+					<pre class="content__api-text">{{{api.payload}}}</pre>
+
+					<h3 class="content__api-title">{{{api.name}}}</h3>
+					<p class="content__api-description">{{{api.description}}}</p>
+					<pre class="content__api-text">{{{api.response}}}</pre>
+				</div>
+				{% endfor %}
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+
+
+<!-- main column -->
+<!-- <div class="content">
+	<aside class="content__sidebar">
+		<ul class="content__sidebar-list">
+			<input class="find" placeholder="Find anything"></input>
+			<li class="content__sidebar-item">
+				<a href="#" class="content__sidebar-link">Introduction</a>
+			</li>
+			<li class="content__sidebar-item">
+				<a href="#" class="content__sidebar-link">Errors</a>
+			</li>
+			<li class="content__sidebar-item">
+				<a href="#" class="content__sidebar-link">Metadata</a>
+			</li>
+			<li class="content__sidebar-item">
+				<a href="#" class="content__sidebar-link">Pagination</a>
+			</li>
+			<li class="content__sidebar-item">
+				<a href="#" class="content__sidebar-link">Request</a>
+			</li>
+			<li class="content__sidebar-item">
+				<a href="#" class="content__sidebar-link">Versioning</a>
+			</li>
+			<li class="content__sidebar-item">
+				<a href="#" class="content__sidebar-link">Balance</a>
+			</li>
+		</ul>
+	</aside>
+
+	<div class="content__inner">
+		<div class="container">
+			<header class="header">
+				<ul class="header__menu">
+					<li class="header__menu-item">
+						<a href="#" class="">API reference</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="#" class="">Docs</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="#" class="">Support</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="#" class="">Sing in</a>
+					</li>
+				</ul>
+			</header>
+		
+		</div>
+	</div>
+</div> -->
