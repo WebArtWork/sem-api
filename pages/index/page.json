@@ -7,11 +7,52 @@
 		"description": "Module Description",
 		"headers": "JSON\nVIEW",
 		"apis": [{
-			"name": "API Name",
+			"name": "Balance",
 			"description": "API Description",
+
 			"method": "POST",
-			"payload": "JSON\nVIEW",
+			"url":"/api/user/get",
+
 			"headers": "JSON\nVIEW",
+
+			"payload": "JSON\nVIEW",
+
+			"response": "JSON\nVIEW"
+		}, {
+			"name": "Balance",
+			"description": "API Description",
+
+			"method": "POST",
+			"url":"/api/user/get",
+			
+			"headers": "JSON\nVIEW",
+
+			"payload": "JSON\nVIEW",
+
+			"response": "JSON\nVIEW"
+		}, {
+			"name": "Balance",
+			"description": "API Description",
+
+			"method": "POST",
+			"url":"/api/user/get",
+			
+			"headers": "JSON\nVIEW",
+
+			"payload": "JSON\nVIEW",
+
+			"response": "JSON\nVIEW"
+		}, {
+			"name": "Balance",
+			"description": "API Description",
+
+			"method": "POST",
+			"url":"/api/user/get",
+			
+			"headers": "JSON\nVIEW",
+
+			"payload": "JSON\nVIEW",
+
 			"response": "JSON\nVIEW"
 		}]
 	}, {
@@ -19,11 +60,16 @@
 		"description": "Module Description",
 		"headers": "JSON\nVIEW",
 		"apis": [{
-			"name": "API Name",
+			"name": "Balance",
 			"description": "API Description",
+
 			"method": "POST",
-			"payload": "JSON\nVIEW",
+			"url":"/api/user/get",
+			
 			"headers": "JSON\nVIEW",
+
+			"payload": "JSON\nVIEW",
+
 			"response": "JSON\nVIEW"
 		}]
 	}, {
@@ -31,11 +77,16 @@
 		"description": "Module Description",
 		"headers": "JSON\nVIEW",
 		"apis": [{
-			"name": "API Name",
+			"name": "Balance",
 			"description": "API Description",
+
 			"method": "POST",
-			"payload": "JSON\nVIEW",
+			"url":"/api/user/get",
+			
 			"headers": "JSON\nVIEW",
+
+			"payload": "JSON\nVIEW",
+
 			"response": "JSON\nVIEW"
 		}] 
 	}]
