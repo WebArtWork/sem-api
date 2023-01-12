@@ -1,22 +1,110 @@
-<!-- main column -->
-<h1>{{{title}}}</h1>
-<p>{{{description}}}</p>
-<pre>{{{headers}}}</pre>
-{% for module in modules %}
-	<!-- main column -->
-	<h2>{{{module.name}}}</h2>
-	<p>{{{module.description}}}</p>
-	<pre>{{{module.headers}}}</pre>
-	{% for api in module.apis %}
-		<div>
-			<!-- main column -->
-			<h3>{{{api.name}}}</h3>
-			<p>{{{api.description}}}</p>
-			<pre>{{{api.response}}}</pre>
-			<!-- side column -->
-			<h3>{{{api.method}}}</h3>
-			<pre>{{{api.headers}}}</pre>
-			<pre>{{{api.payload}}}</pre>
+<!-- main column  -->
+<div class="container">
+
+	<div class="content">
+		<div class="content__about">
+			<h1 class="content__about-title">{{{title}}}</h1>
+			<p class="content__about-description">{{{description}}}</p>
+			<pre>{{{headers}}}</pre>
 		</div>
-	{% endfor %}
-{% endfor %}
+		<div class="content__main">
+			{% for module in modules %}
+			<!-- main column  -->
+			<div class="content__main-module">
+				<div class="content__module-info">
+					<h2 class="content__module-title">{{{module.name}}}</h2>
+					<p class="content__module-description">{{{module.description}}}</p>
+					<pre class="content__module-text">{{{module.headers}}}</pre>
+				</div>
+				{% for api in module.apis %}
+				<!-- main column  -->
+				<!-- side column  -->
+				<div class="content__main-api">
+					<!-- <h3 class="content__api-title">{{{api.method}}}</h3> -->
+					<div class="content__api-left">
+						<h3 class="content__api-title">{{{api.name}}}</h3>
+						<p class="content__api-description">{{{api.description}}}</p>
+					</div>
+
+					<div class="content__api-right">
+						<div>
+							<pre class="content__api-headers">{{{api.headers}}}</pre>
+						</div>
+
+						<div class="content__api-header">
+							<div class="method">{{{api.method}}} {{{api.url}}}</div>
+						</div>
+
+						<div class="content__api-payload-box">
+							<!-- payload part -->
+							<div class="content-payload-topbar">
+								<div class="content-topbar-example-name">
+									Charge with expanded customer, invoice, and subscription
+								</div>
+								<div class="content-topbar-select">
+									&&&&
+								</div>
+								<div class="content-topbar-copy-icon">
+									<span class="material-symbols-outlined">
+										content_copy
+									</span>
+								</div>
+
+							</div>
+							<div class="content-payload-bottom">
+								<div class="content-bottom-list">
+									<li class="list">1</li>
+									<li class="list">2</li>
+									<li class="list">3</li>
+									<li class="list">4</li>
+									<li class="list">5</li>
+								</div>
+								<pre class="content__api-payload">{{{api.payload}}}</pre>
+							</div>
+
+						</div>
+
+						<div class="content__api-response-box">
+							<!-- response part -->
+							<div class="content-response-topbar">
+								<p class="top-name">RESPONSE</p>
+							</div>
+
+							<div class="content-response-bottom">
+								<pre class="content__api-response">{{{api.response}}} fgehdfrfng
+sgdbc
+bdc 
+dnfgv 
+gbd jj o k
+fghjk
+hm lj;l
+ghj  b j  
+j 
+l
+ujn
+hpojk
+fghkl
+iohp
+l j l 
+re
+ybbl
+jl
+ yghb rtgh jhbjgj  jhbjgjgjhb
+ygkhlj
+hpojk
+lkjg
+fryh
+njkm gghj ggik
+gkl
+ iujnlk
+hjkl</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
